@@ -1,15 +1,11 @@
 package com.nexum.kanban.model;
 
 import jakarta.persistence.*;
-import lombok.*;
 
 @Entity
 @Table(name = "subtasks")
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
 public class Subtask {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -18,7 +14,41 @@ public class Subtask {
 
     private boolean completed;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "task_id")
     private Task task;
+
+    // Getters e Setters
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public boolean isCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
+    }
+
+    public Task getTask() {
+        return task;
+    }
+
+    public void setTask(Task task) {
+        this.task = task;
+    }
 }
