@@ -1,18 +1,18 @@
-# Etapa 1: build da aplicação
-FROM eclipse-temurin:17-jdk as builder
+FROM maven:3.9.2-eclipse-temurin-17 AS build
 
 WORKDIR /app
 
 COPY . .
 
+RUN chmod +x ./mvnw
+
 RUN ./mvnw clean package -DskipTests
 
-# Etapa 2: runtime da aplicação
-FROM eclipse-temurin:17-jdk
+FROM eclipse-temurin:17
 
 WORKDIR /app
 
-COPY --from=builder /app/target/*.jar kanban.jar
+COPY --from=build /app/target/kanban.jar kanban.jar
 
 EXPOSE 8080
 
