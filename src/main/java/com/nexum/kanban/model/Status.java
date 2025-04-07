@@ -1,5 +1,5 @@
 package com.nexum.kanban.model;
 
 public enum Status {
-    TODO, IN_PROGRESS, DONE
+    A_FAZER, EM_PROGRESSO, CONCLUIDO
 }
