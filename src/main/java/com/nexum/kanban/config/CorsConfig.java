@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // permite todas as rotas
-                        .allowedOrigins("http://localhost:5173") // origem do front
+                        .allowedOrigins("http://localhost:5173", "https://kanban-frontend-wheat.vercel.app") // origem do front
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // métodos permitidos
                         .allowedHeaders("*");
             }
