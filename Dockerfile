@@ -6,7 +6,7 @@ COPY . .
 
 RUN chmod +x ./mvnw
 
-RUN ./mvnw clean package -DskipTests
+RUN ./mvn clean package -DskipTests
 
 FROM eclipse-temurin:17
 
@@ -17,3 +17,5 @@ COPY --from=build /app/target/kanban.jar kanban.jar
 EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar", "kanban.jar"]
+
+RUN ls -lh /app/target
