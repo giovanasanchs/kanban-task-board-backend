@@ -16,7 +16,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/tasks")
 
-@CrossOrigin(origins = "https://kanban-frontend-wheat.vercel.app")
+@CrossOrigin
 public class TaskController {
 
     private final TaskService taskService;

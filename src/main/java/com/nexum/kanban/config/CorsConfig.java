@@ -16,7 +16,8 @@ public class CorsConfig {
                 registry.addMapping("/**") // permite todas as rotas
                         .allowedOrigins("http://localhost:5173", "https://kanban-frontend-wheat.vercel.app") // origem do front
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // métodos permitidos
-                        .allowedHeaders("*");
+                        .allowedHeaders("*")
+                        .allowCredentials(true);
             }
         };
     }
