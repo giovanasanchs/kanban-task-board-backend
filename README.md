@@ -21,9 +21,9 @@ Este repositório corresponde à API RESTful desenvolvida em **Java com Spring B
 
 ## ✨ Funcionalidades Extras Adicionadas
 
-✨ Suporte a busca por título de tarefa (filtro dinâmico via query param)
-✨ Organização das tarefas por status: A FAZER, EM PROGRESSO, CONCLUÍDO
-✨ Cross-Origin ativado para acesso da aplicação frontend
+- 🔍 **Busca por título de tarefa** via query param (`/tasks?title=...`)
+- 📋 **Organização por status**: A FAZER, EM PROGRESSO, CONCLUÍDO
+- 🔄 **CORS habilitado** para integração com o frontend Vue
 
 ---
 
