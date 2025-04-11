@@ -19,10 +19,11 @@ Este repositório corresponde à API RESTful desenvolvida em **Java com Spring B
 
 ---
 
-## ✨ Funcionalidades Extras (Opcionais Adicionadas)
+## ✨ Funcionalidades Extras Adicionadas
 
-✨ Animações suaves ao mover tarefas  
-🔎 Campo de busca para filtrar tarefas por título  
+✨ Suporte a busca por título de tarefa (filtro dinâmico via query param)
+✨ Organização das tarefas por status: A FAZER, EM PROGRESSO, CONCLUÍDO
+✨ Cross-Origin ativado para acesso da aplicação frontend
 
 ---
 
