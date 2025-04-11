@@ -134,7 +134,7 @@ cd kanban-backend
 # Rode a aplicação
 ./mvnw spring-boot:run
 
-A aplicação estará disponível em:
+# A aplicação estará disponível em:
 http://localhost:8080
 
 ```
