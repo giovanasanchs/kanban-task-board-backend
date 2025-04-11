@@ -3,7 +3,16 @@
 Este repositório corresponde à API RESTful desenvolvida em **Java com Spring Boot** para o desafio técnico da **Nexum**. Ele oferece todas as funcionalidades necessárias para o gerenciamento de tarefas de um **Kanban Board**, integrando-se com o frontend feito em Vue.js.
 
 > 🛠️ **Foco em boas práticas, arquitetura limpa, segurança, organização e facilidade de integração com o frontend.**
-> 
+
+---
+
+## 🔗 Repositório do Frontend
+
+Este projeto possui uma interface frontend desenvolvida em Vue 3.  
+Acesse o repositório clicando no link abaixo:
+
+👉 [kanban-task-board-frontend](https://github.com/giovanasanchs/kanban-task-board-frontend)
+
 ---
 
 ## 🚀 Funcionalidades da API
